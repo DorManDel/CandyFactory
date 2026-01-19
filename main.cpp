@@ -1,9 +1,18 @@
+// Dor Mandel , ID : 315313825;
+// ========================================================================
+// Compile: g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o candyfactory
+// Run: ./candyfactory
+// ========================================================================
+
+// -----------------------------------------------------------
 #include <iostream>
+// -----------------------------------------------------------
 // Include the headers for your classes:
-// #include "SugarSupplier.h"
-// #include "ChocolateSupplier.h"
-// #include "CandyMaker.h"
-// #include "CandyBox.h"
+ #include "SugarSupplier.hpp"
+ #include "ChocolateSupplier.hpp"
+ #include "CandyMaker.hpp"
+ #include "CandyBox.hpp"
+// -----------------------------------------------------------
 
 int main() {
     // 1. Create a CandyMaker with sugar and chocolate supplier names
@@ -17,7 +26,7 @@ int main() {
     myCandyMaker.makeCandy("Fudge Surprise");
 
     // 4. Create a CandyBox for storing candy names
-    CandyBox<Candy> candyBox(5);
+    CandyBox<std::string> candyBox(5);
 
     // 5. Add items
     candyBox.addItem("SourLollipop");
@@ -36,3 +45,54 @@ int main() {
 
     return 0;
 }
+
+/*
+CandyMaker maker("SugarCo", "ChocoDelight");
+maker.supplySugar();
+maker.supplyChocolate();
+maker.makeCandy("Fudge Surprise");
+
+// The CandyBox
+CandyBox<const char*> box(5);
+box.addItem("SourLollipop");
+box.addItem("MintChoco");
+box.displayItems();
+box.removeItem(1);
+box.displayItems();
+*/
+
+/*
+CandyMaker maker("SugarCo", "ChocoDelight");
+maker.makeCandy();
+*/
+
+/*
+
+                               ___                           
+                              (   )                          
+  .--.     .---.  ___ .-.   .-.| | ___  ___                  
+ /    \   / .-, \(   )   \ /   \ |(   )(   )                 
+|  .-. ; (__) ; | |  .-. .|  .-. | | |  | |                  
+|  |(___)  .'`  | | |  | || |  | | | |  | |                  
+|  |      / .'| | | |  | || |  | | | '  | |                  
+|  | ___ | /  | | | |  | || |  | | '  `-' |                  
+|  '(   ); |  ; | | |  | || '  | |  `.__. |                  
+'  `-' | ' `-'  | | |  | |' `-'  /  ___ | |                  
+ `.__,'  `.__.'_.(___)(___)`.__,'  (   )' |                  
+                                    ; `-' '                  
+                                     .__.'                   
+  .-.                    ___                                 
+ /    \                 (   )                                
+ | .`. ;  .---.   .--.   | |_      .--.  ___ .-.   ___  ___  
+ | |(___)/ .-, \ /    \ (   __)   /    \(   )   \ (   )(   ) 
+ | |_   (__) ; ||  .-. ; | |     |  .-. ;| ' .-. ; | |  | |  
+(   __)   .'`  ||  |(___)| | ___ | |  | ||  / (___)| |  | |  
+ | |     / .'| ||  |     | |(   )| |  | || |       | '  | |  
+ | |    | /  | ||  | ___ | | | | | |  | || |       '  `-' |  
+ | |    ; |  ; ||  '(   )| ' | | | '  | || |        `.__. |  
+ | |    ' `-'  |'  `-' | ' `-' ; '  `-' /| |        ___ | |  
+(___)   `.__.'_. `.__,'   `.__.   `.__.'(___)      (   )' |  
+                                                    ; `-' '  
+                                                     .__.'   
+
+*/
