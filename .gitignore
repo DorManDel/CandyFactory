@@ -40,6 +40,7 @@
 # debug information files
 *.dwo
 
+# tests files Ignore
 Ultimate_TortureTest.cpp
 stress_test.cpp
 Ultimate_Torture_Test.cpp
