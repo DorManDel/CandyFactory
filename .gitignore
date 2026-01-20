@@ -44,3 +44,7 @@
 Ultimate_TortureTest.cpp
 stress_test.cpp
 Ultimate_Torture_Test.cpp
+
+printf "\n# local test files\nstress_test.cpp\nUltimate_TortureTest.cpp\nUltimate_Torture_Test.cpp\n" >> .gitignore
+
+*.zip
