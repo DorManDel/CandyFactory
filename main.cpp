@@ -1,7 +1,11 @@
 // Dor Mandel , ID : 315313825;
+// Niv Badichi, ID : 207018904;
+// D:\Programming\Scripts\Dor\CandyFactory54
 // ========================================================================
 // Compile: g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o candyfactory
 // Run: ./candyfactory
+
+// Valgrind: valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./candyfactory
 // ========================================================================
 
 /*
